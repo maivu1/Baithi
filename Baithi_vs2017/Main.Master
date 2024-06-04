@@ -1,0 +1,58 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="Baithi_vs2017.Main" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Shop ABC</title>
+    <link rel="stylesheet" href="css/site.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            height: 26px;
+        }
+    </style>
+</head>
+<body>
+    <div class="myrow"><h1>Cua hang ABC</h1></div>
+    <form id="form1" runat="server">
+        <div class="myrow">
+            <div class="coltrai">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div class="colphai">
+
+                <table style="width:100%;">
+                    <tr>
+                        <td class="auto-style1" colspan="2">Thong tin dang nhap</td>
+                    </tr>
+                    <tr>
+                        <td>Tai khoan</td>
+                        <td>
+                            <asp:TextBox ID="tk" runat="server"></asp:TextBox>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Mat khau</td>
+                        <td>
+                            <asp:TextBox ID="pass" runat="server" TextMode="Password"></asp:TextBox>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input id="Checkbox1" type="checkbox" />Ghi nho mat khau</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Dang nhap" />
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+    </form>
+</body>
+</html>
